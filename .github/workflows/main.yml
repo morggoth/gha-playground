@@ -29,6 +29,9 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+      - name: Context debug
+        run: |
+          echo ${{ github }}
   deploy-prod:
     runs-on: ubuntu-latest
     environment: prod
